@@ -12,7 +12,7 @@ exports.getAllExams = async (req, res, next) => {
   });
 };
 
-exports.gtExam = async (req, res, next) => {
+exports.getExam = async (req, res, next) => {
   const exam = await Exam.findById(req.params.id);
 
   if (!exam) {
